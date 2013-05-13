@@ -1,8 +1,7 @@
-<h1>Plumeria</h1>
-A blank Joomla Template with added support for Bootstrap and LESS both can be enabled and disabled ad per requirement.<br/ >
-This template is intended to be used by Joomla Developers. 
-
-
+<h1>PLUMERIA</h1>
+A blank Joomla Template with added support for Bootstrap and LESS.<br/ >
+This template is intended to be used by Joomla Developers.<br/>
+This template is intended to be used as a base template on which Joomla Developers can develop a website and add any kind of features as per requirement.
 
 <h2>Bootstrap Support</h2>
 Bootstrap can be enabled and disabled from the administrator end.<br/ >
