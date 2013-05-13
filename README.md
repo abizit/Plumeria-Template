@@ -14,5 +14,5 @@ LESS Watch Mode with browser.js is added so that Watch Mode is not restricted to
 base-url for image background path as has been added.
 
 <h3>License</h3>
-Plumeria is released under the <a heref="http://www.wtfpl.net/">WTFPL</a> license. So feel free so use and share.
+Plumeria is released under the WTFPL http://www.wtfpl.net/ license. So feel free so use and share.
 
