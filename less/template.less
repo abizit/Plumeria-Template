@@ -1,0 +1,33 @@
+/*
+Abhijeet Bajracharya
+abhijeet@bluebongo.com.au
+*/
+
+// normalize
+@import 'normalize.less';
+
+// GLOBAL VARIABLES
+
+@white:#ffffff;
+@black:#000000;
+@grey:#333333;
+@blue:#005397;
+@maintextcolor:#52525F;
+@url: "templates/Plumeria";
+
+.fontSize (@size: 12px) {font-size: @size;}
+.bold{font-weight:bold}
+.roundedCorners (@radius: 5px) {border-radius: @radius;}
+.transition (@range: all, @time: 0.3s, @ease: ease-in-out) {-moz-transition: @range @time @ease;-webkit-transition: @range @time @ease;-o-transition: @range @time @ease;transition: @range @time @ease;}
+.border (@bdclr: @grey, @bdwidth: 1px, @bdtype: solid) {border:@bdclr @bdwidth @bdtype;}
+
+// GLOBAL STYLES
+body{background:url("@{url}/images/mainbackground.jpg") top center no-repeat #f5f5f5;.fontSize; font-family: Arial, sans-serif;}
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.clear{clear:both;}
+.wrapper{width: 100%; max-width: 950px; margin: auto;}
+a{.transition;&:hover{text-decoration: none;}}
+img{max-width: 100%; vertical-align: middle; border: 0;}
+
+

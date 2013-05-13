@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" client="site" method="upgrade">
+	
+	<name>Plumeria</name>
+	<creationDate>May 2013</creationDate>
+	<author>Abhijeet Bajracharya</author>
+	<copyright>Copyright © BlueBongo</copyright>
+	<authorEmail>abhijeet@bluebongo.com.au</authorEmail>
+	<authorUrl>http://www.bluebongo.com.au</authorUrl>
+	<version>1.0.2</version>
+	<description><![CDATA[ 
+		<h1>Plumeria</h1>
+		<p>Created by <a href="http://www.bluebongo.com.au" target="_blank">Blue Bongo | www.bluebongo.com.au</a>.</p>
+	]]></description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="de-DE">de-DE.tpl_Plumeria.ini</language>
+		<language tag="en-GB">en-GB.tpl_Plumeria.ini</language>
+		<language tag="ca-CA">ca-CA.tpl_Plumeria.ini</language>
+		<language tag="es-ES">es-ES.tpl_Plumeria.ini</language>
+	</languages>
+	
+	<positions><!-- define the positions for modules here -->
+		<position>debug</position>
+	</positions>
+	
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<!-- MODERNIZR-->
+				<field name="modernizr" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_MODERNIZR_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_MODERNIZR_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<!-- CSS METHOD -->
+				<field name="cssmethod" type="radio" default="css" 
+					label="TPL_FRONTEND_PARAMETER_CSSMETHOD_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_CSSMETHOD_DESC">
+					<option value="css">CSS (default)</option>
+					<option value="less">LESS</option>
+				</field>
+
+				<!-- LESS.JS -->
+				<field name="lessjs" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_LESSJS_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_LESSJS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<!-- BOOTSTRAP -->
+				<field name="bootstrap" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_BOOTSTRAP_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_BOOTSTRAP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<!-- FONT-AWESOME -->
+				<field name="fontawesome" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_FONTAWESOME_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_FONTAWESOME_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<!-- JQUERY -->
+				<field name="jquery" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_JQUERY_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_JQUERY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+
+			</fieldset>
+			
+			<fieldset name="advanced">
+
+				<!-- Disable JavaScript -->	
+				<field name="disablejs" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_DISABLEJS_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_DISABLEJS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<!-- JavaScript Files -->
+				<field name="fnjs" type="textarea" 
+					label="TPL_FRONTEND_PARAMETER_FNJS_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_FNJS_LABEL" 
+					cols="30" default="mootools-core.js,caption.js" rows="4" />
+
+				<!-- Disable CSS -->
+				<field name="disablecss" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_DISABLECSS_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_DISABLECSS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>	
+				</field>
+
+				<!-- CSS Files -->
+				<field name="fncss" type="textarea" 
+					label="TPL_FRONTEND_PARAMETER_FNCSS_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_FNCSS_DESC" 
+					cols="30" rows="4" />
+
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>
