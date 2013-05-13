@@ -1,11 +1,18 @@
 <h1>Plumeria</h1>
-A blank Joomla Template with added support for BootStrap and LESS both can be enabled and disabled ad per requirement..
+A blank Joomla Template with added support for Bootstrap and LESS both can be enabled and disabled ad per requirement..
 This template is intended to be used by Joomla Developers. 
 
 
-<h2>BootStrap Support</h2>
-Bootstrap can be enabled and disable from the administrator end.
+
+<h2>Bootstrap Support</h2>
+Bootstrap can be enabled and disabled from the administrator end.
 For more information about Bootstrap visit http://twitter.github.io/bootstrap/
+
+<h2>LESS Support</h2>
+LESS can be enabled and disabled from the admnistrator end.
+For more information about LESS visit http://lesscss.org/
+LESS Watch Mode with browser.js is added so that Watch Mode is not restricted to just Localhost.
+base Url for image background path as has been added.
 
 <h3>License</h3>
 Plumeria is released under the <a heref="http://www.wtfpl.net/">WTFPL</a> license. So feel free so use and share.
