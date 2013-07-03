@@ -1,7 +1,7 @@
 <?php
 require_once('lessc.inc.php');
 
-$less        = (string) 'template.less';
+$less        = (string) 'layout.less';
 $less_cache      = (string) $less.'.cache';
 $cache       = (string) (file_exists($less_cache)) ? unserialize(file_get_contents($less_cache)) : $less;
 $new_cache   = lessc::cexecute($cache);
