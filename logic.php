@@ -78,9 +78,9 @@ endif;
 // add template sheet
 $doc->addStyleSheet($tpath.'/'.'css'.'/normalize.css');
 // add template sheet
-if ($cssmethod=="css") $doc->addStyleSheet($tpath.'/'.'css'.'/template.css');
+if ($cssmethod=="css") $doc->addStyleSheet($tpath.'/'.'css'.'/layout.css');
 if ($cssmethod=="less") :
-  $doc->addCustomTag('<link rel="stylesheet" type="text/css" href="'.$tpath.'/'.'css'.'/template.php" />');
+  $doc->addCustomTag('<link rel="stylesheet" type="text/css" href="'.$tpath.'/'.'css'.'/layout.php" />');
  endif;
 ?>
 
