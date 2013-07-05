@@ -78,9 +78,20 @@ endif;
 // add template sheet
 $doc->addStyleSheet($tpath.'/'.'css'.'/normalize.css');
 // add template sheet
-if ($cssmethod=="css") $doc->addStyleSheet($tpath.'/'.'css'.'/layout.css');
+if ($cssmethod=="css") $doc->addStyleSheet($tpath.'/'.$cssmethod.'/layout.css');
 if ($cssmethod=="less") :
-  $doc->addCustomTag('<link rel="stylesheet" type="text/css" href="'.$tpath.'/'.'css'.'/layout.php" />');
+  $doc->addStyleSheet($tpath.'/'.$cssmethod.'/less-compile.php?layout.css');
+  
  endif;
+
+  unset($this->_scripts[JURI::root(true).'/media/system/js/caption.js']);
+if (isset($this->_script['text/javascript']))
+{
+    $this->_script['text/javascript'] = preg_replace('%window\.addEvent\(\'load\',\s*function\(\)\s*{\s*new\s*JCaption\(\'img.caption\'\);\s*}\);\s*%', '', $this->_script['text/javascript']);
+
+    if (empty($this->_script['text/javascript']))
+
+        unset($this->_script['text/javascript']);
+}
 ?>
 

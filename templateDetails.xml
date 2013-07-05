@@ -11,13 +11,13 @@
 	<authorUrl>http://www.bluebongo.com.au</authorUrl>
 	<version>1.0.2</version>
 	<description><![CDATA[ 
-		<h1>Plumeria</h1>
-		<p>Created by <a href="http://www.bluebongo.com.au" target="_blank">Blue Bongo | www.bluebongo.com.au</a>.</p>
+		<p>Created by Abhijeet Bajracharya <a href="http://www.bluebongo.com.au" target="_blank">Blue Bongo</a>.</p>
 		]]>
 	</description>
 	
 	<files>
 		<folder>css</folder>
+		<folder>less</folder>
 		<folder>fonts</folder>
 		<folder>html</folder>
 		<folder>images</folder>
