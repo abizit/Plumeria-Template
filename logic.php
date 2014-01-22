@@ -80,7 +80,19 @@ $doc->addStyleSheet($tpath.'/'.'css'.'/normalize.css');
 // add template sheet
 if ($cssmethod=="css") $doc->addStyleSheet($tpath.'/'.$cssmethod.'/layout.css');
 if ($cssmethod=="less") :
-  $doc->addStyleSheet($tpath.'/'.$cssmethod.'/less-compile.php?layout.css');
+  $doc->addStyleSheet($tpath.'/css/layout.css');
+  require_once JPATH_THEMES.'/'.$this->template.'/libraries/lessphp/lessc.inc.php';
+  $customLess = new lessc;
+  $customLess->setFormatter("compressed");
+  $customLess->setPreserveComments(true);
+  $cssdirectory = JPATH_THEMES.'/'.$this->template.'/css';
+  $inputFile = $cssdirectory.'/layout.less';
+  $cacheFile = $cssdirectory.'/layout.css';
+  $inputModTime = filemtime($inputFile);
+  $cacheModTime = filemtime($cacheFile);
+  if($cacheModTime < $inputModTime){
+ $customLess->compileFile($cssdirectory.'/layout.less', $cssdirectory."/layout.css" );  
+  }
   
  endif;
 
